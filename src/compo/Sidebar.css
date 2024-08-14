@@ -1,0 +1,71 @@
+/* src/components/Sidebar.css */
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+.sidebar {
+  background-color: #ffffff; /* Light background */
+  color: #333333; /* Dark text for contrast */
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.menu-label {
+  color: #333333;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu-list .navbar-item {
+  color: #333333;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 10px auto;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.menu-list .navbar-item:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar-item i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #007bff;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+  background-color: #0056b3;
+}
